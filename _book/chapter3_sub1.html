@@ -249,11 +249,46 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="global&#x5BF9;&#x8C61;">global&#x5BF9;&#x8C61;</h1>
+<p>&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5728;&#x7A0B;&#x5E8F;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x8BBF;&#x95EE;&#x5230;&#x5B83;&#x3002;</p>
 <h3 id="global">global</h3>
-<pre><code>&#x548C;&#x6D4F;&#x89C8;&#x5668;&#x7684; window &#x4E00;&#x6837; 
-</code></pre><h3 id="process">process</h3>
-<pre><code>&#x8FDB;&#x7A0B;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x6709;&#x5168;&#x5C40;&#x6267;&#x884C;&#x4E0A;&#x4E0B;&#x6587;&#x90FD;&#x5728;&#x5176;&#x4E2D;
+<blockquote>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x7684; window &#x4E00;&#x6837; </p>
+</blockquote>
+<h3 id="process">process</h3>
+<blockquote>
+<p>&#x8FDB;&#x7A0B;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x6709;&#x5168;&#x5C40;&#x6267;&#x884C;&#x4E0A;&#x4E0B;&#x6587;&#x90FD;&#x5728;&#x5176;&#x4E2D;</p>
+</blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-comment">//NodeJS&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</span>
+process.env.PORT
 </code></pre>
+<h3 id="require">require</h3>
+<blockquote>
+<p>&#x8BF4;&#x5230; <code>require</code>&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x8981;&#x660E;&#x767D;NodeJS&#x4E2D;&#x7684;<code>&#x6A21;&#x5757;&#x7CFB;&#x7EDF;</code>&#x3002;</p>
+<p>NodeJS&#x7684;&#x6A21;&#x5757;&#x7CFB;&#x7EDF;&#xFF0C;&#x662F;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x5DE5;&#x5177;&#xFF0C;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x6784;&#x5EFA;NodeJS&#x5E94;&#x7528;&#x3002;&#x5C31;&#x50CF;JavaScript&#x4E2D;&#xFF0C;&#x6709;Jquery&#x4E00;&#x6837;&#x3002;&#x5B83;&#x4E3B;&#x8981;&#x5E2E;&#x6211;&#x4EEC;&#x96C6;&#x4E2D;&#x89E3;&#x51B3;&#x4E86;&#x5168;&#x5C40;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;&#x6C61;&#x67D3;&#x4EE5;&#x53CA;&#x547D;&#x540D;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;</p>
+<p>NodeJS&#x4E2D;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5206;&#x4E3A;<code>&#x7EDD;&#x5BF9;&#x6A21;&#x5757;</code>&#x548C;<code>&#x76F8;&#x5BF9;&#x6A21;&#x5757;</code>
+&#x5176;&#x4E2D;&#x7EDD;&#x5BF9;&#x6A21;&#x5757;&#x53C8;&#x5206;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>NodeJS&#x7684;&#x5185;&#x7F6E;&#x6A21;&#x5757;&#xFF0C;&#x5982; <code>http</code>&#x3001;<code>fs</code>&#x3001;<code>url</code>&#x7B49;&#xFF1B;&#x5728;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x597D;NodeJS&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E4B;&#x540E;&#x5C31;&#x6709;&#x4E86;</li>
+<li>node_modules&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x901A;&#x8FC7; <code>npm install xxx</code> &#x5B89;&#x88C5;</li>
+</ul>
+<p>&#x76F8;&#x5BF9;&#x6A21;&#x5757;&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x76EE;&#x5F55;&#x4E2D;JavaScript&#x6587;&#x4EF6;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x7684;JavaScript&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;
+<img src="images/1.png"> </p>
+<p><code>require</code> &#x5C31;&#x662F;&#x7528;&#x6765;&#x5F15;&#x5165;<code>&#x7EDD;&#x5BF9;&#x6A21;&#x5757;</code>&#x548C;<code>&#x76F8;&#x5BF9;&#x6A21;&#x5757;</code>&#x7684;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript">
+<span class="hljs-comment">//&#x5F15;&#x5165;&#x7EDD;&#x5BF9;&#x6A21;&#x5757;</span>
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;http&quot;</span>);
+<span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;express&quot;</span>);
+
+<span class="hljs-comment">//&#x5F15;&#x5165;&#x76F8;&#x5BF9;&#x6A21;&#x5757;</span>
+<span class="hljs-keyword">var</span> globals = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./globals&apos;</span>);
+<span class="hljs-keyword">var</span> config = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./config&apos;</span>);
+<span class="hljs-keyword">var</span> business_chat = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../business/chat-tunnel-handler&apos;</span>);
+</code></pre>
+<h3 id="module">module</h3>
+<h3 id="exports">exports</h3>
+
                                 
                                 </section>
                             
@@ -292,7 +327,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"global对象","level":"1.4.1","depth":2,"previous":{"title":"Node中的JavaScript","level":"1.4","depth":1,"path":"chapeter3.md","ref":"chapeter3.md","articles":[{"title":"global对象","level":"1.4.1","depth":2,"path":"chapter3_sub1.md","ref":"chapter3_sub1.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3_sub1.md","mtime":"2017-06-02T04:05:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-02T02:07:22.418Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"global对象","level":"1.4.1","depth":2,"previous":{"title":"Node中的JavaScript","level":"1.4","depth":1,"path":"chapeter3.md","ref":"chapeter3.md","articles":[{"title":"global对象","level":"1.4.1","depth":2,"path":"chapter3_sub1.md","ref":"chapter3_sub1.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3_sub1.md","mtime":"2017-06-02T09:33:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-02T02:07:22.418Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
